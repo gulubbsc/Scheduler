@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.1" />
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<OutputPath>..\..\admin\bin\$(Configuration)</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\..\admin\Version.cs" Link="Properties\Version.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Quartz" />
+	</ItemGroup>
+
+</Project>

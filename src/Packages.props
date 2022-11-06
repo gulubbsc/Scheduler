@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<ItemGroup>
+	  <PackageReference Update="Quartz" 											Version="[3.5.0]" />
+	</ItemGroup>
+</Project>
